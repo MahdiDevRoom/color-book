@@ -1,0 +1,17 @@
+* {
+  &.display-large  { font-size: calc(var(--font-size, 14px) + 44px) }
+  &.display        { font-size: calc(var(--font-size, 14px) + 32px) }
+  &.display-small  { font-size: calc(var(--font-size, 14px) + 24px) }
+  &.headline-large { font-size: calc(var(--font-size, 14px) + 18px) }
+  &.headline       { font-size: calc(var(--font-size, 14px) + 14px) }
+  &.headline-small { font-size: calc(var(--font-size, 14px) + 12px) }
+  &.title-large    { font-size: calc(var(--font-size, 14px) + 10px) }
+  &.title          { font-size: calc(var(--font-size, 14px) + 8px) }
+  &.title-small    { font-size: calc(var(--font-size, 14px) + 4px) }
+  &.body-large     { font-size: calc(var(--font-size, 14px) + 2px) }
+  &.body           { font-size: calc(var(--font-size, 14px) + 0px) }
+  &.body-small     { font-size: calc(var(--font-size, 14px) - 2px) }
+  &.label-large    { font-size: calc(var(--font-size, 14px) - 0px) }
+  &.label          { font-size: calc(var(--font-size, 14px) - 2px) }
+  &.label-small    { font-size: calc(var(--font-size, 14px) - 4px) }
+}

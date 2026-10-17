@@ -1,0 +1,52 @@
+.appbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  .fg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 68px;
+    border-radius: 32px;
+    background: var(--surface-low);
+    padding: 8px;
+    gap: 8px;
+
+    .title {
+      flex-grow: 1;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding-inline-start: 16px;
+    }
+
+    .end,.start {
+      display: flex;
+      justify-content: center;
+      &>* {
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 34px;
+        transition: 250ms;
+
+        &:hover {
+          background: var(--surface);
+        }
+
+        &:active {
+          scale: 0.9;
+        }
+      }
+    }
+  }
+}

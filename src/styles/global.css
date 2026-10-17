@@ -1,0 +1,47 @@
+/* --- Fonts -------------------------------------- */
+/* ... */
+/* --- Default ------------------------------------ */
+* {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+
+  &::-webkit-scrollbar { display: none }
+
+  ::selection {
+    background: var(--primary-container);
+    color: var(--on-primary-container);
+  }
+
+  &>img { max-width: 100% }
+
+  &:root {
+    --font-size: 16px;
+  }
+}
+
+.freeze,
+.freeze *,
+.freeze *::before,
+.freeze *::after {
+  transition: none !important;
+  animation: none !important;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* --- App ---------------------------------------- */
+#app {
+  width: 100%;
+  height: 100%;
+  background: var(--surface-low);
+  color: var(--on-surface);
+}
