@@ -9,6 +9,7 @@
   border-left: 2px solid transparent;
   overflow: hidden;
   z-index: 0;
+  translate: 0 0;
   transition: 250ms;
 
   &.push {
@@ -22,5 +23,4 @@
 
 [dir="rtl"] .view.push {
   translate: -250px 0;
-  z-index: 0;
 }

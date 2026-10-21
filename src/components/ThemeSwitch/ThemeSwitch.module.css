@@ -17,6 +17,8 @@
     border-radius: 12px;
     cursor: pointer;
     transition: 250ms;
+    border: none;
+    background: none;
 
     &:hover {
       background: var(--surface);

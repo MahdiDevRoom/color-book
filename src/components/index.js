@@ -5,3 +5,4 @@ export { default as Appbar } from './Appbar';
 export { default as Panel } from './Panel';
 export { default as ThemeSwitch } from './ThemeSwitch';
 export { default as LangSwitch } from './LangSwitch';
+export { default as CodeBlock } from './CodeBlock';

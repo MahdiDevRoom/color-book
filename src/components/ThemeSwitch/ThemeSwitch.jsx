@@ -1,4 +1,4 @@
-import { useThemeStore } from '@/stores';
+import { usePanelStore, useThemeStore } from '@/stores';
 import {
   Autobrightness as IconAuto,
   Moon3 as IconDark,
@@ -14,20 +14,22 @@ const tabs = [
 ]
 
 export default () => {
+  const isOpen = usePanelStore((s) => s.isOpen);
   const theme = useThemeStore((s) => s.theme);
   const setTheme = useThemeStore((s) => s.setTheme);
 
   return (
     <div className={css['theme-switch']}>
       {tabs.map(({ label, Icon }) => (
-        <span
+        <button
           key={label}
+          tabIndex={isOpen ? 0 : -1}
           onClick={() => setTheme(label)}
           className={theme == label ? css.active : ''}>
           <Icon
             size={24}
             weight={theme == label ? 'Filled' : 'Outline'} />
-        </span>
+        </button>
       ))}
     </div>
   )

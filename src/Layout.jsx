@@ -9,7 +9,7 @@ const RESPONSIVE = {
 }
 
 const TITLES = {
-    '/': 'home-title',
+    '/': 'app-title',
     '/lab': 'lab-title',
     '/docs': 'docs-title',
     '/about': 'about-title',

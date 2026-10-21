@@ -11,6 +11,16 @@ export default ()=> {
 
   const [sysTheme, setSysTheme] = useState(getSysTheme);
   const resolvedTheme = theme === 'auto' ? sysTheme : theme;
+  
+  let link = document.querySelector('link[rel="icon"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.setAttribute('rel', 'icon');
+    link.setAttribute('type', 'image/svg+xml');
+    document.head.appendChild(link);
+  }
+
+  link.setAttribute('href', `favicon.${sysTheme}.svg`);
 
   useEffect(()=> {
     if (typeof window == 'undefined') return;
@@ -29,7 +39,6 @@ export default ()=> {
 
   useLayoutEffect(() => {
     const root = document.documentElement;
-
     root.classList.add("freeze");
 
     const id = requestAnimationFrame(() => requestAnimationFrame(() => root.classList.remove("freeze")));

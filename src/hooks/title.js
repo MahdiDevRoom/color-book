@@ -18,5 +18,5 @@ export default (config) => {
 
     const finalTitle = title ?? config['*'] ?? '';
     setTitle(String(lang, finalTitle, '[!]'));
-  }, [pathname, length]);
+  }, [pathname, length, lang]);
 }
