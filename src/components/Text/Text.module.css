@@ -1,0 +1,15 @@
+.display-large  { font-size: var(--tg-display-large , inherit)}
+.display        { font-size: var(--tg-display       , inherit)}
+.display-small  { font-size: var(--tg-display-small , inherit)}
+.headline-large { font-size: var(--tg-headline-large, inherit)}
+.headline       { font-size: var(--tg-headline      , inherit)}
+.headline-small { font-size: var(--tg-headline-small, inherit)}
+.title-large    { font-size: var(--tg-title-large   , inherit)}
+.title          { font-size: var(--tg-title         , inherit)}
+.title-small    { font-size: var(--tg-title-small   , inherit)}
+.body-large     { font-size: var(--tg-body-large    , inherit)}
+.body           { font-size: var(--tg-body          , inherit)}
+.body-small     { font-size: var(--tg-body-small    , inherit)}
+.label-large    { font-size: var(--tg-label-large   , inherit)}
+.label          { font-size: var(--tg-label         , inherit)}
+.label-small    { font-size: var(--tg-label-small   , inherit)}

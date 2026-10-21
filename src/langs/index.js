@@ -12,5 +12,5 @@ export const LANGS = {
 
 export const String = (lang, label, callbak = undefined)=> {
   const value = DATA[lang][label];
-  return value === undefined ? value : callbak;
+  return value !== undefined ? value : callbak;
 }

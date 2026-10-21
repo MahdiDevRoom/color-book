@@ -1,0 +1,34 @@
+.lang-switch {
+  display: inline-flex;
+  justify-content: center;
+  align-items: stretch;
+  background: var(--surface-high);
+  padding: 4px;
+  gap: 4px;
+  height: 40px;
+  border-radius: 16px;
+
+  &>* {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 250ms;
+    font-weight: 900;
+
+    &:hover {
+      background: var(--surface);
+    }
+
+    &:active {
+      scale: 0.9;
+    }
+
+    &.active {
+      background: var(--surface-low);
+    }
+  }
+}

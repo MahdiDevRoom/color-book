@@ -1,9 +1,9 @@
-import { Main, View } from '@/components';
-import Appbar from '@/components/Appbar';
+import { Appbar, Main, Panel, View } from '@/components';
 
 export default ({ children }) => {
   return (
     <>
+      <Panel/>
       <View>
         <Appbar/>
         <Main> {children} </Main>

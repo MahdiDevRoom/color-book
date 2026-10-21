@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 16px;
+  background: linear-gradient(var(--surface), transparent);
 
   .fg {
     width: 100%;
@@ -27,9 +28,10 @@
       padding-inline-start: 16px;
     }
 
-    .end,.start {
+    .end {
       display: flex;
       justify-content: center;
+
       &>* {
         aspect-ratio: 1;
         display: flex;
@@ -38,6 +40,9 @@
         border: none;
         border-radius: 34px;
         transition: 250ms;
+        padding: 4px;
+        cursor: pointer;
+        background: none;
 
         &:hover {
           background: var(--surface);

@@ -1,0 +1,131 @@
+.panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  translate: -100% 0;
+  scale: 0.95;
+  transition: 250ms;
+  z-index: 5;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 64px;
+    padding: 8px;
+    border-bottom: 2px solid var(--surface-high);
+
+    .title {
+      flex: 1;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding-inline: 16px;
+    }
+
+    .btn {
+      aspect-ratio: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 28px;
+      transition: 250ms;
+
+      &:hover {
+        background: var(--surface);
+      }
+
+      &:active {
+        scale: 0.9;
+      }
+    }
+  }
+
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    padding: 16px;
+    gap: 8px;
+
+    .nav {
+      color: currentColor;
+      text-decoration: none;
+      display: flex;
+      justify-content: start;
+      align-items: stretch;
+      padding: 8px;
+      gap: 8px;
+      border-radius: 16px;
+      border-inline-start: 0 solid transparent;
+      transition: 250ms;
+
+      &:hover {
+        background: var(--surface-high);
+      }
+
+      &:active {
+        scale: 0.9;
+      }
+
+      &>.icon {
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &>.label {
+        flex: 1;
+        display: flex;
+        padding: 0 8px;
+        justify-content: start;
+        align-items: center;
+      }
+
+      &.active {
+        background: var(--surface-highest);
+        border-inline-start: 16px solid var(--inverse-surface);
+      }
+    }
+  }
+
+  &>.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    gap: 8px;
+    padding: 16px;
+    border-top: 2px solid var(--surface-high);
+    font-weight: 700;
+    &>* {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &.active {
+    scale: 1;
+    translate: 0 0;
+  }
+}
+
+[dir="rtl"] .panel {
+  left: 100%;
+  top: 0;
+  translate: 0 0;
+  &.active {
+    translate: -100% 0;
+  }
+}
